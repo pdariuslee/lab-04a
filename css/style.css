@@ -1,0 +1,182 @@
+
+
+body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+
+div {
+  box-sizing: border-box;
+  background-color: gray;
+  outline: 1px solid black;
+  width: 100%;
+  background-color: orange;
+}
+
+
+body > div:nth-child(1){
+height: 75px;
+line-height: 75px;
+text-align: center;  
+}
+
+body > div:nth-child(2){
+  height: 150px;
+  line-height: 150px;
+  text-align: center;  
+  }
+
+body > div:nth-child(3){
+    height: 125px;
+    line-height: 125px;
+    text-align: center;    
+    }
+
+body > div:nth-child(4){
+    height: 125px;
+    line-height: 125px;
+    text-align: center;  
+    }
+
+body > div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8){
+      height: 250px;
+      width: 50%;
+      line-height: 250px;
+      text-align: center;  
+        
+      }
+
+  body > div:nth-child(9){
+        height: 80px;
+        line-height: 80px;
+        text-align: center;  
+      }
+
+
+
+
+/* ==================== 768 - 960 */
+
+
+
+
+@media only screen and (min-width: 768px){
+
+  body{
+    width: 960px;
+    display: grid;
+    grid-template-areas: 
+    "a a a a a"
+    "b b b b b"
+    "c c c c c"
+    "d d d d d";
+  }
+
+
+/* a */
+body > div:nth-child(1){
+height: 100px;
+line-height: 100px;
+text-align: center;  
+grid-column: 1 /span 5;
+grid-row: 1 / span 1;  
+}
+
+div{
+  background-color: red;
+
+}
+
+/* b */
+body > div:nth-child(2){
+  height: 600px;
+  width: 200px;
+  line-height: 600px;
+  text-align: center;  
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 3;  
+  }
+
+/* c */
+  body > div:nth-child(3){
+    height: 200px;
+    width: 380px;
+    line-height: 200px;
+    text-align: center;  
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1; 
+
+  }
+  
+  /* d */
+  body > div:nth-child(4){
+    height: 200px;
+    width: 380px;
+    line-height: 200px;
+    text-align: center;  
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 1; 
+    }
+
+/* e */
+body > div:nth-child(5){
+    height: 250px;
+    width: 190px;  
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+/* f */
+body > div:nth-child(6){
+    height: 250px;
+    width: 190px;
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+
+} 
+
+/* g */
+body > div:nth-child(7){
+    height: 250px;
+    width: 190px;
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+} 
+
+/* h */
+body > div:nth-child(8){
+      height: 250px;
+      width: 190px;
+      grid-column: 5 / span 1;
+      grid-row: 3 / span 1;
+      }
+
+/* i */
+body > div:nth-child(9){
+      height: 150px;
+      width: 760px;
+      grid-column: 2 / span 4;
+      grid-row: 4 / span 1;
+      line-height: 150px;
+      text-align: center;  
+      }
+
+
+
+  }
+
+
+
+  /* =================== tablet */
+
+  @media only screen and (min-width: 1000px){
+  
+  div{
+    background-color: paleturquoise;
+  
+  }
+  
+    }
