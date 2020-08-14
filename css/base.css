@@ -1,0 +1,29 @@
+/* ================ tag selectors */
+
+/* * {
+  outline: 2px solid orange;
+} */
+
+body {
+
+  width: 480px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+    
+}
+
+@media(min-width: 768px){
+  body{
+    width: 768px;
+    
+  }
+
+
+}
+
+
+/* ================ id selectors */
+
+
+/* ================ class selectors */
